@@ -1,0 +1,141 @@
+<html>
+<head>
+	<style>
+		body{
+		margin:0;
+		}
+		.nav{
+		display:flex;
+		background-color:black;
+		height:40px;
+		position:sticky;
+		top:0;
+		}
+		a{
+		text-decoration:none;
+		color:white;
+		margin-left:1px;
+		padding:12px;
+		background-color:#141414;
+		}
+		h1{
+		text-align:center;
+		}
+		img{
+		width:400px;
+		height:300px;
+		border:1px solid black;
+		}
+		.image{
+		display:flex;
+		justify-content:space-evenly;
+		margin: 10px;
+		}
+		span{
+		font-weight:bold;
+		}
+		#p1{
+		position:relative;
+		}
+		span::before
+		{
+		content:"Stay healthy!";
+		background-color:yellow;
+		color:red;
+		padding:2px;
+		transform:scale(0);
+		position:absolute;
+		top:-30px	;
+		font-size:8;
+		transition: all ease-in-out 0.5s;
+		}
+		span:hover::before{
+		transform: scale(1);
+		font-size:20;
+		}
+		.content{
+		margin:60px;
+		font-size:20;
+		}
+		.img-head{
+		background-color:black;
+		color:white;
+		padding:5px;
+		}
+		.img-head:hover{
+		transform:scale(1.05);
+		}
+		.list{
+		counter-reset:counter-m;
+		margin-left:20%;
+		background-color:#fffaa8;
+		padding: 20px 150px;
+		width:40%;
+		margin-bottom:40px;
+		}
+		.list p{
+		margin-top:40px;
+		line-height:1.2;
+		font-size:18;
+		}
+		.list p::before{
+		border:1px solid black;
+		border-radius:50%;
+		padding:5px;
+		margin-left:-30px;
+		counter-increment: counter-m;
+		content:counter(counter-m)".";
+		}
+	</style>
+</head>
+<body>
+	<div class="nav">
+		<a href="#">Home</a>
+		<a href="#">Work</a>
+		<a href="#">About</a>
+		<a href="#">Skills</a>
+	</div>
+	<h1>FOOD ITEMS</h1>
+	<br><br>
+	<div class="image">
+		<div class="img-head">
+		<img src="https://www.listchallenges.com/f/lists/3d06c742-15cc-49b2-8845-7ef42d0c9f97.jpg">
+		<h2>BURGER</h2>
+		</div>
+		<div class="img-head">
+		<img src="https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2019/08/Masala-Dosa1.jpg">
+		<h2>DOSA</h2>
+		</div>
+	</div>
+	<div class="image">
+		<div class="img-head">
+		<img src="https://smedia2.intoday.in/aajtak/images/stories/072015/chole_bhature_pakwan_520_070815033739.jpg?size=1200:675">
+		<h2>CHOLE BHATURE</h2>
+		</div>
+	</div>
+	<div class="image">
+		<div class="img-head">
+		<img src="https://i.ytimg.com/vi/XsipAaImDVc/maxresdefault.jpg">
+		<h2>PASTA</h2>
+		</div>
+		<div class="img-head">
+		<img src="https://www.franchiseindia.com/uploads/content/ri/art/5a9a46adbc050.jpg">
+		<h2>PIZZA</h2>
+		</div>
+	</div>
+	<div class="content">
+	<h3>FOOD IS LIFE</h3>
+	<p id="p1">
+	Food is the basic human need to stay alive. Moreover, it is the need of every living organism. 
+	Therefore it is important that we should not waste <span>food</span>. Our world consists of different types of cultures. 
+	These cultures have varieties of dishes of food in them.
+	</p>
+	</div>
+	<div class="list">
+		<h2>HOW TO MAKE PASTA</h2>
+		<p> Boil water in a large pot<br>To make sure pasta doesn’t stick together, use at least 4 quarts of water for every pound of noodles.</p>
+		<p> Salt the water with at least a tablespoon—more is fine<br>The salty water adds flavor to the pasta.</p>
+		<p> Add pasta<br>Pour pasta into boiling water. Don’t break the pasta; it will soften up within 30 seconds and fit into the pot.</p>
+	</div>
+</body>
+</html>
